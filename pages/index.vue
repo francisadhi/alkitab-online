@@ -6,7 +6,7 @@
         alkitab-online
       </h1>
       <h2 class="subtitle">
-        My lovely Nuxt.js project
+        My lovely Nuxt.js projectttt
       </h2>
       <div class="links">
         <a
