@@ -1,8 +1,29 @@
 <template>
-  <div>
+  <div id="nav">
+    <app-header />
     <nuxt />
+
   </div>
 </template>
+
+<script lang="ts">
+// import { Component, Vue } from 'nuxt-property-decorator'
+// import { Vue } from 'vue'
+import Header from '../components/organisms/AppHeader.vue'
+
+// @Component({
+//   components: {
+//     Header
+//   }
+// })
+
+export default {
+  components: {
+    'app-header': Header
+  }
+
+}
+</script>
 
 <style>
 html {
@@ -22,6 +43,19 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+#nav {
+  padding: 0px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
 }
 
 .button--green {
@@ -52,4 +86,5 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
 </style>
