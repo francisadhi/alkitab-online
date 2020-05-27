@@ -20,6 +20,7 @@
     "nuxt": "^2.8.1",
     "nuxt-property-decorator": "^2.7.2",
     "vue-lazyload": "^1.2.6",
+    "vue-router": "^3.3.0",
     "vue2-google-maps": "^0.9.6",
     "vue2-transitions": "^0.2.3"
   },
