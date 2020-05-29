@@ -72,7 +72,7 @@
           {
             id: 1,
             text: 'Hubungi Kami',
-            page:'/'
+            page:'/contact-us'
           }
         ]
       }

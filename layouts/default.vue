@@ -2,6 +2,7 @@
   <div>
     <app-header />
     <nuxt />
+    <app-footer />
   </div>
 </template>
 
@@ -9,6 +10,7 @@
 // import { Component, Vue } from 'nuxt-property-decorator'
 // import { Vue } from 'vue'
 import Header from '../components/organisms/AppHeader.vue'
+import AppFooterVue from '../components/organisms/AppFooter.vue'
 
 // @Component({
 //   components: {
@@ -18,7 +20,8 @@ import Header from '../components/organisms/AppHeader.vue'
 
 export default {
   components: {
-    'app-header': Header
+    'app-header': Header,
+    'app-footer': AppFooterVue
   }
 
 }

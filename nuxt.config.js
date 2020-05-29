@@ -27,8 +27,9 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+ plugins: [
+  '@/plugins/axios.js'
+],
   /*
   ** Nuxt.js dev-modules
   */
@@ -38,9 +39,13 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
   ],
+  axios: {
+    baseURL: 'https://api.scripture.api.bible/v1/'
+  },
   /*
   ** Build configuration
   */

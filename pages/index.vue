@@ -1,7 +1,33 @@
 <template>
-  <div class="container">
+  <div>
+    <b-container>
     <div>
-      <logo />
+      <app-carousel class="app-carousel"/>
+      <b-row class="text-center">
+        <b-col class="mt-4">
+          <app-card title="Daftar Kitab" :link="{name: 'bible-book', params: {id: ''}}" />
+        </b-col>
+        <b-col class="mt-4">
+          <app-card title="Lagu Pujian" :link="{name: '', params: {id: ''}}" />
+        </b-col>
+        <b-col class="mt-4">
+          <app-card title="Blog" :link="{name: '', params: {id: ''}}" />
+        </b-col>
+      </b-row>
+      <app-section title="Test">
+        <b-row class="text-center">
+          <b-col class="mt-4">
+            <app-card />
+          </b-col>
+          <b-col class="mt-4">
+            <app-card />
+          </b-col>
+          <b-col class="mt-4">
+            <app-card />
+          </b-col>
+        </b-row>
+      </app-section>
+      <!-- <logo />
       <h1 class="title">
         alkitab-online
       </h1>
@@ -23,29 +49,40 @@
         >
           GitHub
         </a>
-      </div>
+      </div> -->
     </div>
+    </b-container>
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import AppCarousel from '~/components/atoms/AppCarousel.vue'
+import AppCard from '~/components/molecules/AppCard.vue'
+import AppSection from '../components/molecules/AppSection.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    'app-carousel': AppCarousel,
+    'app-card': AppCard,
+    'app-section': AppSection
   }
 }
 </script>
 
 <style>
-.container {
+/* .container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+} */
+
+.app-carousel {
+  margin: 10px 0 40px 0;
 }
 
 .title {
