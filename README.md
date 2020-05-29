@@ -33,4 +33,4 @@ Copyright © 2018 by Franciscus Adhi Nugroho
 
 ## Contributors
 
-<table><tr><td align="center"><a href="http://altera.id"><img src="https://avatars2.githubusercontent.com/u/8231792?v=4" width="100px;" alt="azul"/><br /><sub><b>azul</b></sub></a><br /><a href="https://github.com/francisadhi/alkitab-online" title="Bug reports">🐛</a></td></tr></table>
+<table><tr><td align="center"><a href="http://merabusolutions.com"><img src="https://avatars2.githubusercontent.com/u/8231792?v=4" width="100px;" alt="francisadhi"/><br /><sub><b>francisadhi</b></sub></a><br /><a href="https://github.com/francisadhi/alkitab-online" title="Bug reports">🐛</a></td></tr></table>
