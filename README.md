@@ -2,6 +2,10 @@
 
 > My lovely Nuxt.js project
 
+## Live Website
+
+<https://rohanimerabusolutions.com/>
+
 ## Build Setup
 
 ```bash
@@ -20,3 +24,13 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## Credit
+
+-   Thanks for .....
+
+Copyright © 2018 by Franciscus Adhi Nugroho
+
+## Contributors
+
+<table><tr><td align="center"><a href="http://altera.id"><img src="https://avatars2.githubusercontent.com/u/8231792?v=4" width="100px;" alt="azul"/><br /><sub><b>azul</b></sub></a><br /><a href="https://github.com/francisadhi/alkitab-online" title="Bug reports">🐛</a></td></tr></table>
