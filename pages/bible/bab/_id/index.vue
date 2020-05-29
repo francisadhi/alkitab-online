@@ -7,6 +7,7 @@
                 {{ chapter.content }}
                 </b-card-text>
             </b-card>
+            <app-button-group :link="{name: 'bible-bab-id', params: {id: '', nextid: chapter.next.id, preid: chapter.previous.id}}" class="text center"/>
         <!-- </b-col> -->
         </b-row>
     </div>
@@ -16,6 +17,7 @@
 import AppCardVue from '@/components/molecules/AppCard.vue';
 import AppSearchVue from '@/components/organisms/AppSearch.vue';
 import { mapActions, mapState } from 'vuex'
+import AppButtonGroupVue from '@/components/molecules/AppButtonGroup.vue';
 export default {
     // props: {
     //     link: {
@@ -25,12 +27,23 @@ export default {
     // },
     components: {
         'app-search': AppSearchVue,
-        'app-card': AppCardVue
+        'app-card': AppCardVue,
+        'app-button-group': AppButtonGroupVue
     },
     async asyncData({store, params}) {
-        await Promise.all([
-            store.dispatch('bible/getChapter', params.id)
-        ])
+        // if (params.id != ''){
+            await Promise.all([
+                store.dispatch('bible/getChapter', params.id)
+            ])
+        // } else if (params.nextid != '') {
+        //     await Promise.all([
+        //         store.dispatch('bible/getChapter', params.nextid)
+        //     ])
+        // } else if (params.preid != '') {
+        //     await Promise.all([
+        //         store.dispatch('bible/getChapter', params.preid)
+        //     ])
+        // }
         return
     },
     data() {

@@ -2,7 +2,7 @@
     <div class="container">
         <b-row class="text-center">
         <!-- <b-col class="mt-4"> -->
-            <app-card v-for="book in books" :key="book.id" :title="book.name" :nameLong="book.nameLong" :link="{name: 'bible-bab-id', params: {id: book.id}}" />
+            <app-card v-for="book in books" :key="book.id" :title="book.name" :nameLong="book.nameLong" :link="{name: 'bible-bab', params: {id: book.id}}" />
         <!-- </b-col> -->
         </b-row>
     </div>
