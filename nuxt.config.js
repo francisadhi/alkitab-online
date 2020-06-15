@@ -1,6 +1,6 @@
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -27,9 +27,9 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
- plugins: [
-  '@/plugins/axios.js'
-],
+  plugins: [
+    '@/plugins/axios.js'
+  ],
   /*
   ** Nuxt.js dev-modules
   */
@@ -42,9 +42,27 @@ export default {
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
+    '@nuxtjs/pwa',
   ],
   axios: {
     baseURL: 'https://api.scripture.api.bible/v1/'
+  },
+  pwa: {
+    manifest: {
+      name: 'Baca Alkitab',
+      short_name: 'Alkitab',
+      start_url: `.`,
+      theme_color: '#da552f',
+      background_color: '#FFF',
+      // lang: 'zh-CN',
+      icons: [
+        {
+          src: `~/assets/img/logo.png`,
+          type: 'image/png',
+          sizes: '512x512'
+        }
+      ],
+    }
   },
   /*
   ** Build configuration

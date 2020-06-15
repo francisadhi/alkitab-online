@@ -1,7 +1,7 @@
 <template>
   <a
     v-if="isNewWindow"
-    class="app-link"
+    class="navbar-item app-link"
     :href="path"
     target="_blank"
   >

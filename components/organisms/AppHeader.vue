@@ -2,7 +2,7 @@
     <div>
   <b-navbar toggleable="lg" type="dark" variant="info">
     <b-container fluid="lg">
-    <b-navbar-brand><nuxt-link to="/" class="app-logo">Elkitab</nuxt-link></b-navbar-brand>
+    <b-navbar-brand><nuxt-link to="/" class="app-logo"><app-logo /></nuxt-link></b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -60,7 +60,11 @@
   import AppLink from '../atoms/AppLink'
 
   import HorizontalLinkList from '../molecules/HorizontalLinkList'
+  import AppLogoVue from '~/components/atoms/AppLogo.vue'
   export default {
+    components: {
+      'app-logo': AppLogoVue
+    },
     data() {
       return {
         links: [
