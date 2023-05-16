@@ -4,7 +4,6 @@
 
 ## Live Website
 
-<https://rohani.merabusolutions.com/>
 
 ## Build Setup
 
